@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  ul 
+    each m in messages
+      li
+      h3 #{m.text}
+      p From #{m.user}
+      p At #{m.added}
+  
+  a(href="/new") Yo, say something
+      

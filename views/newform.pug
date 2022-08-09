@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+    h1 #{title}
+
+    form(method='post' action='')
+        div.form-group
+            label(for='name') Name:
+            input#name(type='text' name='name' placeholder='Your name here'
+            required='true')
+            
+            lable(for='content') Content:
+            input#content.form-control(type='text' name = 'content' 
+            placeholder='Your message here' required='true')
+
+        button.btn.btn-primary(type='submit') Submit
